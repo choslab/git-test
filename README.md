@@ -34,8 +34,8 @@ teststsagdsasfadgadga
 > > This is a first blockquote.
 teststsagdsasfadgadga
 teststsagdsasfadgadga
-"
-'''
+<pre>
+<code>
 # Regression Example With Boston Dataset: Baseline
 from pandas import read_csv
 from keras.models import Sequential
@@ -63,8 +63,8 @@ estimator = KerasRegressor(build_fn=baseline_model, epochs=100, batch_size=5, ve
 kfold = KFold(n_splits=10)
 results = cross_val_score(estimator, X, Y, cv=kfold)
 print("Baseline: %.2f (%.2f) MSE" % (results.mean(), results.std()))
-'''
-"
+</code>
+</pre>
 teststsagdsasfadgadga
 + 1111111111111111111
   + 22222222222222222
